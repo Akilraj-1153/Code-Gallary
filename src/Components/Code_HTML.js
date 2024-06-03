@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Editor from '@monaco-editor/react';
 import files from './Data';
@@ -22,7 +21,10 @@ function Code_HTML({ updateIframeContent }) {
         defaultLanguage={file.language}
         defaultValue={file.value}
         onChange={handleEditorChange}
-        className='text-wrap'
+        options={{
+          wordWrap: "on",
+          minimap: { enabled: false },
+        }}
       />
     </div>
   );
