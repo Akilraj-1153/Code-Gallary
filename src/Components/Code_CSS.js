@@ -1,13 +1,29 @@
-import React from 'react'
+
+import React, { useState } from 'react';
 import Editor from '@monaco-editor/react';
+import files from './Data';
 
+function Code_CSS({ updateIframeContent }) {
+  const [code, setCode] = useState(files['style.css'].value);
+  const file = files['style.css'];
 
-function Code_CSS() {
+  const handleEditorChange = (value) => {
+    setCode(value);
+    updateIframeContent(value, 'style.css');
+  };
+
   return (
-    <div className='h-full w-full overflow-scroll  p-1'>
-      <Editor height='calc(100% - 1vh)' defaultLanguage="html" defaultValue="// some comment" theme="vs-dark" />
+    <div className='h-full w-full overflow-scroll p-1'>
+      <Editor
+        height='calc(100% - 1vh)'
+        theme='vs-dark'
+        path={file.name}
+        defaultLanguage={file.language}
+        defaultValue={file.value}
+        onChange={handleEditorChange}
+      />
     </div>
-  )
+  );
 }
 
-export default Code_CSS
+export default Code_CSS;
