@@ -1,12 +1,52 @@
-import React, { useState } from 'react'
+import React from "react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { BsGithub } from "react-icons/bs";
 
-function HomeSidePage() {
-    const [tempimg]=useState(require('../Assets/temp.png'))
-  return (
-    <div className='object-fill h-full w-full'>
-        <img src={tempimg} className='h-full w-full object-cover'></img>
-    </div>
-  )
+export default function HomePage(){
+    return(
+        <div className="h-full w-full justify-center items-center bg-gradient-to-r from-slate-900 to-slate-700 rounded-md flex gap-2 xs:flex-col lg:flex-row">
+           
+            <div className="h-full w-full rounded-md flex justify-center items-center ">
+            <div className=" h-fit w-full p-5 flex flex-col justify-center items-center gap-2">
+                    <h1 className="text-6xl text-white text-center font-mateSc">Code Gallery</h1>
+                    <div>
+                    <h1 className="text-white text-lg mt-4 text-justify max-w-lg font-mate text-wrap">
+  Welcome to Code Gallery! Here, you'll find a collection of amazing projects and resources to level up your coding skills. Whether you're a beginner looking to learn the basics or an experienced developer seeking inspiration, you're in the right place. Explore our gallery to discover fascinating code snippets created by our talented community.
+</h1>
+
+                    </div>
+                    
+                    <div className="flex gap-5 p-10">
+          <a
+            href="https://github.com/yourgithub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-400"
+          >
+            <BsGithub size={30} />
+          </a>
+          <a
+            href="https://twitter.com/yourtwitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-400"
+          >
+            <FaXTwitter size={30} />
+          </a>
+          <a
+            href="https://instagram.com/yourinstagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-pink-400"
+          >
+            <FaInstagram size={30} />
+          </a>
+        </div>
+            </div>
+            
+
+            </div>
+        </div>
+    )
 }
-
-export default HomeSidePage

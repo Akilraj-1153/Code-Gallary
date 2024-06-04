@@ -5,7 +5,7 @@ import HomePage from './Components/HomePage'
 
 function App() {
   return (
-    <div className='h-screen w-screen   overflow-hidden '>
+    <div className='h-screen w-screen bg-black gap-1 flex flex-col  overflow-hidden '>
       <div className='p-1 rounded-lg h-[8vh] w-full  ' >
       <NavBar></NavBar>
       </div>
