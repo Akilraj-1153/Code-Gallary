@@ -23,9 +23,6 @@ module.exports = {
         '135': '135deg',
       }
     },
-    backgroundImage:{
-      Home:"url('./Assets/HomeImg.png')"
-    }
   },
   plugins: [],
 }
