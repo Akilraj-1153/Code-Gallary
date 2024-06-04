@@ -10,7 +10,7 @@ const files = {
       value: `body { margin: 0; padding: 0; }
       button{
           background-color: blue;
-         height: 100vh;
+         height: 10vh;
       }`
     },
     'index.html': {
