@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomeSidePage() {
   return (
-    <div className='h-full w-full rotate-135 scale-150 flex flex-col gap-2 justify-center items-center select-none'>
+    <div className='h-full w-full rotate-135 scale-150 flex flex-col gap-2 justify-center items-center select-none opacity'>
       <div className='h-[100vh] w-[100vh] flex items-center justify-center gap-2'>
         <h1 className='rotate-180 flex items-center justify-center'>Buttons</h1>
         <button className='rotate-180 rounded-lg justify-center items-center flex h-[70%] w-[20vh] bg-gray-600'>Button 1</button>

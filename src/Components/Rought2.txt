@@ -1,0 +1,12 @@
+import React, { useState } from 'react'
+
+function HomeSidePage() {
+    const [tempimg]=useState(require('../Assets/temp.png'))
+  return (
+    <div className='object-fill h-full w-full'>
+        <img src={tempimg} className='h-full w-full object-cover'></img>
+    </div>
+  )
+}
+
+export default HomeSidePage

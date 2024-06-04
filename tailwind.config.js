@@ -19,6 +19,9 @@ module.exports = {
         Protest:['Protest Revolution ,sans-serif'],
         Roboto:['Roboto Mono,monospace'],
       },
+      rotate: {
+        '135': '135deg',
+      }
     },
     backgroundImage:{
       Home:"url('./Assets/HomeImg.png')"
